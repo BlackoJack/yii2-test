@@ -42,12 +42,10 @@ AppAsset::register($this);
                 ['label' => 'Login', 'url' => ['/user/default/login']]
             ) : (
                 '<li>'
-                . Html::beginForm(['/site/logout'], 'post')
+                . Html::beginForm(['/user/default/logout'], 'post')
                 . Html::submitButton(
                     'Logout (' . Yii::$app->user->identity->username . ')',
                     ['class' => 'btn btn-link'],
-                    'url' => ['/user/default/logout'],
-                    'linkOptions' => ['data-method' => 'post']],
                 )
                 . Html::endForm()
                 . '</li>'
