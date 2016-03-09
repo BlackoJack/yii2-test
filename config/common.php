@@ -34,6 +34,14 @@ return [
             'class' => 'yii\log\Dispatcher',
         ],
     ],
+    'modules' => [
+        'main' => [
+            'class' => 'app\modules\main\Module',
+        ],
+        'user' => [
+            'class' => 'app\modules\user\Module',
+        ],
+    ],
     'params' => $params,
 ];
 
