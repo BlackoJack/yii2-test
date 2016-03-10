@@ -12,7 +12,7 @@ use yii\widgets\Breadcrumbs;
 <?php $this->beginPage(); ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 
 	<meta charset="utf-8"/>
@@ -55,8 +55,8 @@ use yii\widgets\Breadcrumbs;
 					<span><?=Yii::t('app', 'NAW_CONTACT')?></span>
 					<img class="icon" src="<?php echo $this->theme->baseUrl ?>/images/mail.png" alt="" />
 				</a>
-				<a class="box" href="#" style="background: #6b6b6b;">
-					<span>Settings</span>
+				<a class="box" href="/" style="background: #6b6b6b;">
+					<span><?=Yii::t('app', 'NAV_HOME')?></span>
 					<img class="icon" src="<?php echo $this->theme->baseUrl ?>/images/settings.png" alt="" />
 				</a>
 				<a class="box" href="#" style="background: #43b51f;">
