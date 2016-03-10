@@ -2,16 +2,16 @@
 $config = [
     'id' => 'app',
     'language'=>'ru-RU',
-    'view' => [
-        'class' => 'yii\web\View',
-        'theme' => [
-            'class' => 'yii\base\Theme',
-            'pathMap' => ['@app/views' => 'themes/night-lights'],
-            'baseUrl'   => 'themes/night-lights'
-        ]
-    ],
     'defaultRoute' => 'main/default/index',
     'components' => [
+        'view' => [
+            'class' => 'yii\web\View',
+            'theme' => [
+                'class' => 'yii\base\Theme',
+                'pathMap' => ['@app/views' => 'themes/night-lights'],
+                'baseUrl'   => 'themes/night-lights'
+            ]
+        ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => '',
