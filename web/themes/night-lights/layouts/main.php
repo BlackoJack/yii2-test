@@ -44,11 +44,11 @@ use yii\debug\Toolbar;
     </tr>
   </table>
   <div id="navigation">
-<?php echo Menu::widget(array(
-        'options' => array('class' => 'nav'),
-        'items' => array(
-          array('label' => Yii::t('app', 'NAV_HOME'), 'url' => array('/main/default/index')),
-          array('label' => Yii::t('app', 'NAW_CONTACT'), 'url' => array('/contact/default/index')),
+<?php echo Menu::widget([
+        'options' => ['class' => 'nav'],
+        'items' => [
+          ['label' => Yii::t('app', 'NAV_HOME'), 'url' => ['/main/default/index']],
+          ['label' => Yii::t('app', 'NAW_CONTACT'), 'url' => ['/contact/default/index']],
           Yii::$app->user->isGuest ?
             ['label' => Yii::t('app', 'NAV_SIGNUP'), 'url' => ['/user/default/signup']] :
             false,
@@ -56,10 +56,10 @@ use yii\debug\Toolbar;
             ['label' => Yii::t('app', 'NAV_PROFILE'), 'url' => ['/user/profile/index']] :
             false,
           Yii::$app->user->isGuest ?
-            array('label' => Yii::t('app', 'NAV_LOGIN'), 'url' => array('/user/default/login')) :
-            array('label' => Yii::t('app', 'NAV_LOGOUT').' (' . Yii::$app->user->identity->username .')' , 'url' => array('/user/default/logout')),
-        ),
-      )); ?>
+            ['label' => Yii::t('app', 'NAV_LOGIN'), 'url' => ['/user/default/login']] :
+            ['label' => Yii::t('app', 'NAV_LOGOUT').' (' . Yii::$app->user->identity->username .')' , 'url' => ['/user/default/logout'], 'linkOptions' => ['data-method' => 'post']],
+        ],
+      ]); ?>
   </div>
   <div id="banner">
     <div class="wsite-header"></div>
