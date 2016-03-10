@@ -7,7 +7,7 @@ $config = [
         'view' =>array(
             'theme' => array(
                 'pathMap' => array('@app/views' => '@webroot/themes/night-lights'),
-                'baseUrl'   => '@www/themes/night-lights'
+                'baseUrl'   => '@web/themes/night-lights'
             )
         ),
         'request' => [
