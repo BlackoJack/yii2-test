@@ -27,7 +27,6 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
     const STATUS_BLOCKED = 0;
     const STATUS_ACTIVE = 1;
     const STATUS_WAIT = 2;
-    const SCENARIO_PROFILE = 'profile';
 
     public static function findIdentity($id)
     {
@@ -244,11 +243,5 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
         $this->email_confirm_token = null;
     }
 
-    public function scenarios()
-    {
-        return ArrayHelper::merge(parent::scenarios(), [
-            self::SCENARIO_PROFILE => ['email'],
-        ]);
-    }
 
 }
