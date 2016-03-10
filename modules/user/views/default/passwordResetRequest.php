@@ -7,7 +7,7 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
-$this->title = Yii::t('app', 'TITLE_RESET_PASSWORD');
+$this->title = Yii::t('app', 'TITLE_PASSWORD_RESET');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="user-default-password-reset-request">
