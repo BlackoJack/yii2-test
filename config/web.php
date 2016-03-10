@@ -3,15 +3,13 @@ $config = [
     'id' => 'app',
     'language'=>'ru-RU',
     'defaultRoute' => 'main/default/index',
-    'view' => [
-        'class' => 'yii\web\View',
-        'theme' => [
-            'class' => 'yii\base\Theme',
-            'pathMap' => ['@app/views' => 'themes/night-lights'],
-            'baseUrl'   => 'themes/night-lights'
-        ]
-    ],
     'components' => [
+        'view' =>array(
+            'theme' => array(
+                'pathMap' => array('@app/views' => '@wwwroot/themes/night-lights'),
+                'baseUrl'   => '@www/themes/night-lights'
+            )
+        ),
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => '',
