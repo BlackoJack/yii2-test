@@ -38,6 +38,20 @@ class ProfileController extends Controller
         ]);
     }
 
+    public function actionUpdate()
+    {
+        $model = $this->findModel();
+        $model->scenario = User::SCENARIO_PROFILE;
+
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            return $this->redirect(['index']);
+        } else {
+            return $this->render('update', [
+                'model' => $model,
+            ]);
+        }
+    }
+
     /**
      * @return User the loaded model
      */
