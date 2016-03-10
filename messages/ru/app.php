@@ -25,6 +25,7 @@ return [
     'BUTTON_SAVE' => 'Сохранить',
     'BUTTON_CREATE' => 'Добавить',
     'BUTTON_UPDATE' => 'Редактировать',
+    'BUTTON_SEND' => 'Отправить',
     'BUTTON_DELETE' => 'Удалить',
     'CONFIRM_DELETE' => 'Удалить запись?',
     'LINK_PASSWORD_CHANGE' => 'Сменить пароль',
