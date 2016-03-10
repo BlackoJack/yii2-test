@@ -6,8 +6,8 @@ $config = [
     'components' => [
         'view' =>array(
             'theme' => array(
-                'pathMap' => array('@app/views' => '@webroot/themes/night-lights'),
-                'baseUrl'   => '@web/themes/night-lights'
+                'pathMap' => array('@app/views' => '@webroot/themes/metro'),
+                'baseUrl'   => '@web/themes/metro'
             )
         ),
         'request' => [
