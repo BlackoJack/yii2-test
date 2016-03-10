@@ -67,5 +67,11 @@ return [
     'HELLO {username}' => 'Здравствуйте, {username}!',
     'FOLLOW_TO_RESET_PASSWORD' => 'Для смены пароля пройдите по ссылке:',
     'FOLLOW_TO_CONFIRM_EMAIL' => 'Для подтверждения адреса пройдите по ссылке:',
-    'IGNORE_IF_DO_NOT_REGISTER' => 'Если Вы не регистрировались на нашем сайте, то просто удалите это письмо.'
+    'IGNORE_IF_DO_NOT_REGISTER' => 'Если Вы не регистрировались на нашем сайте, то просто удалите это письмо.',
+    'CONTACT_NAME' => 'Ваше имя',
+    'CONTACT_EMAIL' => 'Ваш Email',
+    'CONTACT_SUBJECT' => 'Тема',
+    'CONTACT_MESSAGE' => 'Сообщение',
+    'CONTACT_VERIFY_CODE' => 'Код',
+    'CONTACT_THANKS' => 'Спасибо! Мы свяжемся с Вами в скором  времени.',
 ];

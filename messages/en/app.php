@@ -66,5 +66,11 @@ return [
     'HELLO {username}' => 'Hello, {username}!',
     'FOLLOW_TO_RESET_PASSWORD' => 'Follow the link below to reset your password:',
     'FOLLOW_TO_CONFIRM_EMAIL' => 'Follow the link below to confirm your email:',
-    'IGNORE_IF_DO_NOT_REGISTER' => 'If you do not register on our site just remove this mail.'
+    'IGNORE_IF_DO_NOT_REGISTER' => 'If you do not register on our site just remove this mail.',
+    'CONTACT_NAME' => 'Your name',
+    'CONTACT_EMAIL' => 'Your Email',
+    'CONTACT_SUBJECT' => 'Subject',
+    'CONTACT_MESSAGE' => 'Message',
+    'CONTACT_VERIFY_CODE' => 'Verify code',
+    'CONTACT_THANKS' => 'Thank you for contacting us. We will respond to you as soon as possible.',
 ];
