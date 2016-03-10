@@ -13,7 +13,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="site-login">
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <p><?= Module::t('module', 'PLEASE_FILL_FOR_LOGIN') ?></p>
+    <p><?= Yii::t('app', 'PLEASE_FILL_FOR_LOGIN') ?></p>
 
     <div class="row">
         <div class="col-lg-5">
@@ -26,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <?= $form->field($model, 'rememberMe')->checkbox() ?>
 
                 <div style="color:#999;margin:1em 0">
-                    <?= Html::a(Module::t('module', 'LINK_PASSWORD_RESET'), ['password-reset-request']) ?>.
+                    <?= Html::a(Yii::t('app', 'LINK_PASSWORD_RESET'), ['password-reset-request']) ?>.
                 </div>
 
                 <div class="form-group">
