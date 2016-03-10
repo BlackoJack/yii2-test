@@ -13,6 +13,7 @@ use app\modules\user\models\User;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use Yii;
+use yii\widgets\ActiveForm;
 
 class ProfileController extends Controller
 {
