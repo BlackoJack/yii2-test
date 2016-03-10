@@ -2,6 +2,14 @@
 $config = [
     'id' => 'app',
     'language'=>'ru-RU',
+    'view' => [
+        'class' => 'yii\web\View',
+        'theme' => [
+            'class' => 'yii\base\Theme',
+            'pathMap' => ['@app/views' => 'themes/night-lights'],
+            'baseUrl'   => 'themes/night-lights'
+        ]
+    ],
     'defaultRoute' => 'main/default/index',
     'components' => [
         'request' => [
