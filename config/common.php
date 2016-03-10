@@ -60,7 +60,7 @@ return [
     'view' =>array(
         'theme' => array(
             'pathMap' => array('@app/views' => '@wwwroot/themes/night-lights'),
-            'baseUrl'   => '@www/themes/THEME_FOLDER_NAME'
+            'baseUrl'   => '@www/themes/night-lights'
         )
     ),
     'params' => $params,
