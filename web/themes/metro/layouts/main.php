@@ -59,8 +59,8 @@ use yii\widgets\Breadcrumbs;
 					<span><?=Yii::t('app', 'NAV_HOME')?></span>
 					<img class="icon" src="<?php echo $this->theme->baseUrl ?>/images/settings.png" alt="" />
 				</a>
-				<a class="box" href="#" style="background: #43b51f;">
-					<span>Make a call</span>
+				<a class="box" href="/login" style="background: #43b51f;">
+					<span><?=Yii::t('app', 'NAV_LOGIN')?></span>
 					<img class="icon" src="<?php echo $this->theme->baseUrl ?>/images/phone.png" alt="" />
 				</a>
 				<a class="box width2 height2" href="#">
