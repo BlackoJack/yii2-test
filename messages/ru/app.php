@@ -12,7 +12,7 @@ return [
     'BUTTON_UPDATE' => 'Редактировать',
     'BUTTON_DELETE' => 'Удалить',
 
-    ...
+
 
     'HELLO {username}' => 'Здравствуйте, {username}!',
     'FOLLOW_TO_RESET_PASSWORD' => 'Для смены пароля пройдите по ссылке:',

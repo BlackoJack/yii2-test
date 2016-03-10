@@ -11,7 +11,7 @@ return [
     'BUTTON_UPDATE' => 'Update',
     'BUTTON_DELETE' => 'Delete',
 
-    ...
+
 
     'HELLO {username}' => 'Hello, {username}!',
     'FOLLOW_TO_RESET_PASSWORD' => 'Follow the link below to reset your password:',
