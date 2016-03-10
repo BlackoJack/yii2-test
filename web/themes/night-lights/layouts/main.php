@@ -50,10 +50,10 @@ use yii\debug\Toolbar;
           array('label' => Yii::t('app', 'NAV_HOME'), 'url' => array('/main/default/index')),
           array('label' => Yii::t('app', 'NAW_CONTACT'), 'url' => array('/contact/default/index')),
           Yii::$app->user->isGuest ?
-            array(['label' => Yii::t('app', 'NAV_SIGNUP'), 'url' => ['/user/default/signup']]) :
+            ['label' => Yii::t('app', 'NAV_SIGNUP'), 'url' => ['/user/default/signup']] :
             false,
           !Yii::$app->user->isGuest ?
-            array(['label' => Yii::t('app', 'NAV_PROFILE'), 'url' => ['/user/profile/index']]) :
+            ['label' => Yii::t('app', 'NAV_PROFILE'), 'url' => ['/user/profile/index']] :
             false,
           Yii::$app->user->isGuest ?
             array('label' => Yii::t('app', 'NAV_LOGIN'), 'url' => array('/user/default/login')) :
