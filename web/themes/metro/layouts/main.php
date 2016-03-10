@@ -51,7 +51,7 @@ use yii\widgets\Breadcrumbs;
 		</div>
 		<div class="content clearfix">
 			<div class="items">
-				<a class="box" href="/contact/default/index">
+				<a class="box" href="/contact">
 					<span><?=Yii::t('app', 'NAW_CONTACT')?></span>
 					<img class="icon" src="<?php echo $this->theme->baseUrl ?>/images/mail.png" alt="" />
 				</a>
