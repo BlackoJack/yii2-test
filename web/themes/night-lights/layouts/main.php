@@ -47,12 +47,11 @@ use yii\debug\Toolbar;
 <?php echo Menu::widget(array(
         'options' => array('class' => 'nav'),
         'items' => array(
-          array('label' => 'Home', 'url' => array('/site/index')),
-          array('label' => 'About', 'url' => array('/site/about')),
-          array('label' => 'Contact', 'url' => array('/site/contact')),
+          array('label' => Yii::t('app', 'NAV_HOME'), 'url' => array('/main/default/index')),
+          array('label' => Yii::t('app', 'NAW_CONTACT'), 'url' => array('/contact/default/index')),
           Yii::$app->user->isGuest ?
-            array('label' => 'Login', 'url' => array('/site/login')) :
-            array('label' => 'Logout (' . Yii::$app->user->identity->username .')' , 'url' => array('/site/logout')),
+            array('label' => Yii::t('app', 'NAV_LOGIN'), 'url' => array('/user/default/login')) :
+            array('label' => Yii::t('app', 'NAV_LOGOUT').' (' . Yii::$app->user->identity->username .')' , 'url' => array('/user/default/logout')),
         ),
       )); ?>
   </div>
