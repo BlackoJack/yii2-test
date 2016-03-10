@@ -7,6 +7,7 @@ $params = ArrayHelper::merge(
 );
  
 return [
+    'name' => 'Black-Service',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'components' => [
