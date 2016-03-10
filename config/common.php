@@ -57,6 +57,12 @@ return [
             'class' => 'app\modules\user\Module',
         ],
     ],
+    'view' =>array(
+        'theme' => array(
+            'pathMap' => array('@app/views' => '@wwwroot/themes/night-lights'),
+            'baseUrl'   => '@www/themes/THEME_FOLDER_NAME'
+        )
+    ),
     'params' => $params,
 ];
 
