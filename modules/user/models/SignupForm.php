@@ -43,6 +43,19 @@ class SignupForm extends Model
     }
 
     /**
+     * @inheritdoc
+     */
+    public function attributeLabels()
+    {
+        return [
+            'username' => Yii::t('app', 'USER_USERNAME'),
+            'email' => Yii::t('app', 'USER_EMAIL'),
+            'password' => Yii::t('app', 'USER_PASSWORD'),
+            'verifyCode' => Yii::t('app', 'USER_VERIFY_CODE'),
+        ];
+    }
+
+    /**
      * Signs user up.
      *
      * @return User|null the saved model or null if saving fails
