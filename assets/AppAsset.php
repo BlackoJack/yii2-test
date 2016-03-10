@@ -23,6 +23,7 @@ class AppAsset extends AssetBundle
     public $js = [
     ];
     public $depends = [
+        'app\assets\IESupportAsset',
         'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset',
     ];
