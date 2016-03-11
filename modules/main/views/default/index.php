@@ -7,9 +7,9 @@ $this->title = Yii::$app->name;
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>Congratulations!</h1>
+        <h1>СибСервис</h1>
 
-        <p class="lead">IT-решение для решения ваших задач.</p>
+        <p class="lead">- это IT-решение для решения ваших задач.</p>
 
         <p><a class="btn btn-lg btn-success" href="/login">Подать заявку на обслуживание</a></p>
     </div>
