@@ -1,15 +1,14 @@
 <?php
-
+/**
+ * @var $this \yii\web\View
+ * @var $content string
+ */
 use yii\helpers\Html;
 use yii\widgets\Menu;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 use app\components\widgets\Alert;
 
-/**
- * @var $this \yii\web\View
- * @var $content string
- */
 // $this->registerAssetBundle('app');
 AppAsset::register($this);
 ?>
@@ -43,7 +42,7 @@ AppAsset::register($this);
                                 ['label' => Yii::t('app', 'NAV_SIGNUP'), 'url' => ['/user/default/signup'], 'visible' => Yii::$app->user->isGuest],
 						        ['label' => Yii::t('app', 'NAV_LOGIN'), 'url' => ['/user/default/login'], 'visible' => Yii::$app->user->isGuest],
                                 ['label' => Yii::t('app', 'NAV_PROFILE'), 'url' => ['/user/profile/index'], 'visible' => !Yii::$app->user->isGuest],
-                                ['label' => Yii::t('app', 'NAV_LOGOUT'), 'url' => ['/user/default/logout'], 'template' => '<a href="{url}" data-method="post">{label}</a>', 'visible' => !Yii::$app->user->isGuest],
+                                ['label' => Yii::t('app', 'NAV_LOGOUT').' (' . Yii::$app->user->identity->username . ')', 'url' => ['/user/default/logout'], 'template' => '<a href="{url}" data-method="post">{label}</a>', 'visible' => !Yii::$app->user->isGuest],
 						    ],
 						]);
 					?>
