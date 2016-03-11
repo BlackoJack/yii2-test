@@ -10,7 +10,8 @@ use app\components\widgets\Alert;
  * @var $this \yii\base\View
  * @var $content string
  */
- $this->registerAssetBundle('app');
+// $this->registerAssetBundle('app');
+AppAsset::register($this);
 ?>
 <?php $this->beginPage(); ?>
 
