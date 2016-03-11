@@ -42,7 +42,9 @@ AppAsset::register($this);
                                 ['label' => Yii::t('app', 'NAV_SIGNUP'), 'url' => ['/user/default/signup'], 'visible' => Yii::$app->user->isGuest],
 						        ['label' => Yii::t('app', 'NAV_LOGIN'), 'url' => ['/user/default/login'], 'visible' => Yii::$app->user->isGuest],
                                 ['label' => Yii::t('app', 'NAV_PROFILE'), 'url' => ['/user/profile/index'], 'visible' => !Yii::$app->user->isGuest],
-                                ['label' => Yii::t('app', 'NAV_LOGOUT').' (' . Yii::$app->user->identity->username . ')', 'url' => ['/user/default/logout'], 'template' => '<a href="{url}" data-method="post">{label}</a>', 'visible' => !Yii::$app->user->isGuest],
+                                !Yii::$app->user->isGuest ?
+                                ['label' => Yii::t('app', 'NAV_LOGOUT').' (' . Yii::$app->user->identity->username . ')', 'url' => ['/user/default/logout'], 'template' => '<a href="{url}" data-method="post">{label}</a>', 'visible' => !Yii::$app->user->isGuest] :
+                                    false,
 						    ],
 						]);
 					?>
