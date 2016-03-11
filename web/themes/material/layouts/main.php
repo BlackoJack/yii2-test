@@ -13,7 +13,7 @@ use yii\widgets\Breadcrumbs;
 <?php $this->beginPage(); ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?= Yii::$app->language ?>">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   
@@ -35,10 +35,12 @@ use yii\widgets\Breadcrumbs;
 						echo Menu::widget([
 						    'options' => ['id' => "nav-mobile", 'class' => 'right side-nav'],
 						    'items' => [
-						        ['label' => 'Home', 'url' => ['site/index']],
-						        ['label' => 'About', 'url' => ['site/about']],
-						        ['label' => 'Contact', 'url' => ['site/contact']],
-						        ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
+						        ['label' => Yii::t('app', 'NAV_HOME'), 'url' => ['/main/default/index']],
+						        ['label' => Yii::t('app', 'NAW_CONTACT'), 'url' => ['/contact/default/index']],
+                                ['label' => Yii::t('app', 'NAV_SIGNUP'), 'url' => ['/user/default/signup'], 'visible' => Yii::$app->user->isGuest],
+						        ['label' => Yii::t('app', 'NAV_LOGIN'), 'url' => ['/user/default/login'], 'visible' => Yii::$app->user->isGuest],
+                                ['label' => Yii::t('app', 'NAV_PROFILE'), 'url' => ['/user/profile/index'], 'visible' => !Yii::$app->user->isGuest],
+                                ['label' => Yii::t('app', 'NAV_LOGOUT').' (' . Yii::$app->user->identity->username . ')', 'url' => ['/user/default/logout'], 'visible' => !Yii::$app->user->isGuest],
 						    ],
 						]);
 					?>
