@@ -3,12 +3,14 @@
 use yii\helpers\Html;
 use yii\widgets\Menu;
 use yii\widgets\Breadcrumbs;
+use app\assets\AppAsset;
+use app\components\widgets\Alert;
 
 /**
  * @var $this \yii\base\View
  * @var $content string
  */
-// $this->registerAssetBundle('app');
+ $this->registerAssetBundle('app');
 ?>
 <?php $this->beginPage(); ?>
 
