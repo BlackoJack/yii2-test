@@ -28,14 +28,11 @@ $this->title = Yii::$app->name;
                 <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
             </div>
             <div class="col-lg-4">
-                <h2>Heading</h2>
+                <h2>Думаете слишком дорого?</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+                <p>Несмотря на то, что мы заинтересованы в заработке, большую заинтересованность для нас представляет работа с постоянными клиентами. Именно поэтому наши цены такие низкие. Не верите? Убедитесь сами!</p>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
+                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Какие у вас цены? &raquo;</a></p>
             </div>
             <div class="col-lg-4">
                 <h2>Думаете слишком сложно?</h2>
