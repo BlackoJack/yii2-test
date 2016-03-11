@@ -30,7 +30,7 @@ AppAsset::register($this);
 </head>
 <body>
   <?php $this->beginBody() ?>
-  <nav class="light-blue lighten-1" role="navigation">
+  <nav class="light-blue navbar-fixed lighten-1" role="navigation">
     <div class="container">
       <div class="nav-wrapper"><a id="logo-container" href="/" class="brand-logo"><?php echo Html::encode(\Yii::$app->name); ?></a>
 	  		<?php
