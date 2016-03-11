@@ -41,9 +41,7 @@ AppAsset::register($this);
     NavBar::begin([
         'brandLabel' => Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'id' => "nav-mobile", 'class' => 'right side-nav'
-        ],
+
     ]);
 
             echo Nav::widget([
