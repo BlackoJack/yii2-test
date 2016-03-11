@@ -3,8 +3,6 @@
 use yii\helpers\Html;
 use yii\widgets\Menu;
 use yii\widgets\Breadcrumbs;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
 use app\assets\AppAsset;
 use app\components\widgets\Alert;
 
@@ -37,28 +35,17 @@ AppAsset::register($this);
     <div class="container">
       <div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo"><?php echo Html::encode(\Yii::$app->name); ?></a>
 	  		<?php
-
-
-
-            echo Nav::widget([
-                'options' => ['id' => "nav-mobile", 'class' => 'right side-nav'],
-                'items' => array_filter([
-                    ['label' => Yii::t('app', 'NAV_HOME'), 'url' => ['/main/default/index']],
-                    ['label' => Yii::t('app', 'NAW_CONTACT'), 'url' => ['/contact/default/index']],
-                    Yii::$app->user->isGuest ?
-                        ['label' => Yii::t('app', 'NAV_SIGNUP'), 'url' => ['/user/default/signup']] :
-                        false,
-                    !Yii::$app->user->isGuest ?
-                        ['label' => Yii::t('app', 'NAV_PROFILE'), 'url' => ['/user/profile/index']] :
-                        false,
-                    Yii::$app->user->isGuest ?
-                        ['label' => Yii::t('app', 'NAV_LOGIN'), 'url' => ['/user/default/login']] :
-                        ['label' => Yii::t('app', 'NAV_LOGOUT').' (' . Yii::$app->user->identity->username . ')',
-                            'url' => ['/user/default/logout'],
-                            'linkOptions' => ['data-method' => 'post']],
-                ]),
-            ]);
-
+						echo Menu::widget([
+						    'options' => ['id' => "nav-mobile", 'class' => 'right side-nav'],
+						    'items' => [
+						        ['label' => Yii::t('app', 'NAV_HOME'), 'url' => ['/main/default/index']],
+						        ['label' => Yii::t('app', 'NAW_CONTACT'), 'url' => ['/contact/default/index']],
+                                ['label' => Yii::t('app', 'NAV_SIGNUP'), 'url' => ['/user/default/signup'], 'visible' => Yii::$app->user->isGuest],
+						        ['label' => Yii::t('app', 'NAV_LOGIN'), 'url' => ['/user/default/login'], 'template' => '<a href="{url}" data-method="post">{label}</a>', 'visible' => Yii::$app->user->isGuest],
+                                ['label' => Yii::t('app', 'NAV_PROFILE'), 'url' => ['/user/profile/index'], 'visible' => !Yii::$app->user->isGuest],
+                                ['label' => Yii::t('app', 'NAV_LOGOUT'), 'url' => ['/user/default/logout'], 'template' => '<a href="{url}" data-method="post">{label}</a>', 'visible' => !Yii::$app->user->isGuest],
+						    ],
+						]);
 					?>
           <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
       </div>
