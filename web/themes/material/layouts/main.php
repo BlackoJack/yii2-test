@@ -7,7 +7,7 @@ use app\assets\AppAsset;
 use app\components\widgets\Alert;
 
 /**
- * @var $this \yii\base\View
+ * @var $this \yii\web\View
  * @var $content string
  */
 // $this->registerAssetBundle('app');
