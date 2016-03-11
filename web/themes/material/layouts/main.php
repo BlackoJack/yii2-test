@@ -47,7 +47,7 @@ AppAsset::register($this);
     ]);
 
             echo Nav::widget([
-                'options' => ['class' => 'navbar-nav navbar-right'],
+                'options' => ['id' => "nav-mobile", 'class' => 'right side-nav'],
                 'items' => array_filter([
                     ['label' => Yii::t('app', 'NAV_HOME'), 'url' => ['/main/default/index']],
                     ['label' => Yii::t('app', 'NAW_CONTACT'), 'url' => ['/contact/default/index']],
