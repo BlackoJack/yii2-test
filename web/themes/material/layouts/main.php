@@ -37,6 +37,15 @@ AppAsset::register($this);
     <div class="container">
       <div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo"><?php echo Html::encode(\Yii::$app->name); ?></a>
 	  		<?php
+
+    NavBar::begin([
+        'brandLabel' => Yii::$app->name,
+        'brandUrl' => Yii::$app->homeUrl,
+        'options' => [
+            'class' => 'navbar-inverse navbar-fixed-top',
+        ],
+    ]);
+
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => array_filter([
@@ -55,6 +64,7 @@ AppAsset::register($this);
                             'linkOptions' => ['data-method' => 'post']],
                 ]),
             ]);
+            NavBar::end();
 					?>
           <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
       </div>
