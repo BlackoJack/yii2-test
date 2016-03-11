@@ -26,5 +26,7 @@ class AppAsset extends AssetBundle
         'yii\web\YiiAsset',
         'app\assets\IESupportAsset',
         'yii\bootstrap\BootstrapAsset',
+        'yii\web\JqueryAsset',
+        'yii\bootstrap\BootstrapPluginAsset'
     ];
 }
