@@ -32,7 +32,7 @@ AppAsset::register($this);
   <?php $this->beginBody() ?>
   <nav class="light-blue lighten-1" role="navigation">
     <div class="container">
-      <div class="nav-wrapper"><a id="logo-container" href="/" class="brand-logo"><?php echo Html::img('@web/images/logo3.svg', ['alt'=>Yii::$app->name, 'height'=>'60px']); ?></a>
+      <div class="nav-wrapper"><a id="logo-container" href="/" class="brand-logo"><?php echo Html::img('@web/images/logo4.svg', ['alt'=>Yii::$app->name, 'height'=>'60px']); ?></a>
 	  		<?php
 						echo Menu::widget([
 						    'options' => ['id' => "nav-mobile", 'class' => 'right side-nav'],
