@@ -28,6 +28,9 @@ $this->params['breadcrumbs'][] = $this->title;
                 <div style="color:#999;margin:1em 0">
                     <?= Html::a(Yii::t('app', 'LINK_PASSWORD_RESET'), ['password-reset-request']) ?>.
                 </div>
+            <div style="color:#999;margin:1em 0">
+                <?= Html::a(Yii::t('app', 'LINK_SIGNUP'), ['signup']) ?>.
+            </div>
 
                 <div class="form-group">
                     <?= Html::submitButton(Yii::t('app', 'USER_BUTTON_LOGIN'), ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>

@@ -28,6 +28,7 @@ return [
     'BUTTON_DELETE' => 'Delete',
     'CONFIRM_DELETE' => 'Are you sure you want to delete this item?',
     'LINK_PASSWORD_CHANGE' => 'Change password',
+    'LINK_SIGNUP' => 'Signup',
     'LINK_PASSWORD_RESET' => 'Reset password',
     'USER_USERNAME' => 'Username',
     'USER_PASSWORD' => 'Password',

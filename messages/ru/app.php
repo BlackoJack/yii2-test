@@ -29,6 +29,7 @@ return [
     'BUTTON_DELETE' => 'Удалить',
     'CONFIRM_DELETE' => 'Удалить запись?',
     'LINK_PASSWORD_CHANGE' => 'Сменить пароль',
+    'LINK_SIGNUP' => 'Регистрация',
     'LINK_PASSWORD_RESET' => 'Восстановить пароль',
     'USER_USERNAME' => 'Имя пользователя',
     'USER_PASSWORD' => 'Пароль',
