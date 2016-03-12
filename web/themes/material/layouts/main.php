@@ -31,7 +31,7 @@ AppAsset::register($this);
 <body>
   <?php $this->beginBody() ?>
   <div class="navbar-fixed">
-  <nav>
+  <nav class="light-blue lighten-1" role="navigation" style="position: fixed;">
     <div class="container">
       <div class="nav-wrapper"><a id="logo-container" href="/" class="brand-logo"><?php echo Html::img('@web/images/logo5.svg', ['alt'=>Yii::$app->name, 'height'=>'60px']); ?></a>
 	  		<?php
