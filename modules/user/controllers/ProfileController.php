@@ -10,11 +10,11 @@ namespace app\modules\user\controllers;
 
 
 use app\modules\user\models\User;
+use app\modules\user\models\PasswordChangeForm;
 use app\modules\user\models\ProfileUpdateForm;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use Yii;
-use yii\widgets\ActiveForm;
 
 class ProfileController extends Controller
 {
@@ -61,4 +61,19 @@ class ProfileController extends Controller
     {
         return User::findOne(Yii::$app->user->identity->getId());
     }
+
+    public function actionPasswordChange()
+    {
+        $user = $this->findModel();
+        $model = new PasswordChangeForm($user);
+
+        if ($model->load(Yii::$app->request->post()) && $model->changePassword()) {
+            return $this->redirect(['index']);
+        } else {
+            return $this->render('passwordChange', [
+                'model' => $model,
+            ]);
+        }
+    }
+
 }
