@@ -3,9 +3,10 @@
 namespace app\modules\user\models;
 
 use Yii;
+use yii\base\NotSupportedException;
 use yii\behaviors\TimestampBehavior;
-use yii\web\IdentityInterface;
 use yii\helpers\ArrayHelper;
+use yii\web\IdentityInterface;
 
 /**
  * This is the model class for table "{{%user}}".
@@ -90,11 +91,11 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
     {
         return [
             'id' => 'ID',
-            'created_at' => 'Создан',
-            'updated_at' => 'Обновлён',
-            'username' => 'Имя пользователя',
-            'email' => 'Email',
-            'status' => 'Статус',
+            'created_at' => Yii::t('app', 'USER_CREATED'),
+            'updated_at' => Yii::t('app', 'USER_UPDATED'),
+            'username' => Yii::t('app', 'USER_USERNAME'),
+            'email' => Yii::t('app', 'USER_EMAIL'),
+            'status' => Yii::t('app', 'USER_STATUS'),
         ];
     }
 
@@ -113,9 +114,9 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
     public static function getStatusesArray()
     {
         return [
-            self::STATUS_BLOCKED => 'Заблокирован',
-            self::STATUS_ACTIVE => 'Активен',
-            self::STATUS_WAIT => 'Ожидает подтверждения',
+            self::STATUS_BLOCKED => Yii::t('app', 'USER_STATUS_BLOCKED'),
+            self::STATUS_ACTIVE => Yii::t('app', 'USER_STATUS_ACTIVE'),
+            self::STATUS_WAIT => Yii::t('app', 'USER_STATUS_WAIT'),
         ];
     }
 
