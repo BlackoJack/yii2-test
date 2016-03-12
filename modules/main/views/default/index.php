@@ -7,7 +7,7 @@ $this->title = Yii::$app->name;
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>СибСервис</h1>
+        <h1><?=Html::img('@web/images/logo.png', ['alt'=>Yii::$app->name])?></h1>
 
         <p class="lead">- это IT-решение для решения ваших задач.</p>
 
