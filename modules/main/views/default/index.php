@@ -9,7 +9,7 @@ use yii\helpers\Html;
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1><?=Html::img('@web/images/logo.png', ['alt'=>Yii::$app->name])?></h1>
+        <h1><?=Html::img('@web/images/logo.svg', ['alt'=>Yii::$app->name, 'height'=>'60%'])?></h1>
 
         <p class="lead">IT-решение для решения ваших задач.</p>
 
