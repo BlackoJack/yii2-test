@@ -7,7 +7,7 @@ $params = ArrayHelper::merge(
 );
  
 return [
-    'name' => 'SibService',
+    'name' => '<img src="views/images/logo.png" />',
     'language'=>'ru',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
