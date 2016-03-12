@@ -11,7 +11,7 @@ use yii\helpers\Html;
     <div class="jumbotron">
         <h1><?=Html::img('@web/images/logo.png', ['alt'=>Yii::$app->name])?></h1>
 
-        <p class="lead">- это IT-решение для решения ваших задач.</p>
+        <p class="lead">IT-решение для решения ваших задач.</p>
 
         <p><a class="btn btn-lg btn-success" href="/login">Подключиться</a></p>
     </div>
