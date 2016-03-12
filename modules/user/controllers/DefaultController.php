@@ -4,7 +4,7 @@ namespace app\modules\user\controllers;
 use app\modules\user\models\EmailConfirmForm;
 use app\modules\user\models\LoginForm;
 use app\modules\user\models\PasswordResetRequestForm;
-use app\modules\user\models\PasswordResetForm;
+use app\modules\user\models\ResetPasswordForm;
 use app\modules\user\models\SignupForm;
 use yii\base\InvalidParamException;
 use yii\filters\AccessControl;
@@ -134,7 +134,7 @@ class DefaultController extends Controller
     public function actionPasswordReset($token)
     {
         try {
-            $model = new PasswordResetForm($token);
+            $model = new ResetPasswordForm($token);
         } catch (InvalidParamException $e) {
             throw new BadRequestHttpException($e->getMessage());
         }
