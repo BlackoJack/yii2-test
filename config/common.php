@@ -7,7 +7,7 @@ $params = ArrayHelper::merge(
 );
  
 return [
-    'name' => 'Black-Service',
+    'name' => '<img src="views/images/logo.png">',
     'language'=>'ru',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
