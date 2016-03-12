@@ -9,7 +9,7 @@ $this->title = Yii::$app->name;
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1><?=include("images/logo.svg");?></h1>
+        <h1><?php include("images/logo.svg");?></h1>
 
         <p class="lead">IT-решение для решения ваших задач.</p>
 
