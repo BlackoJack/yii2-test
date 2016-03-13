@@ -33,7 +33,7 @@ AppAsset::register($this);
   <div class="navbar-fixed">
   <nav class="light-blue lighten-1" role="navigation">
     <div class="container">
-      <div class="nav-fixed"><a id="logo-container" href="/" class="brand-logo"><?php echo Html::img('@web/images/logo5.svg', ['alt'=>Yii::$app->name, 'height'=>'60px']); ?></a>
+      <div class="nav-wrapper"><a id="logo-container" href="/" class="brand-logo right"><?php echo Html::img('@web/images/logo5.svg', ['alt'=>Yii::$app->name, 'height'=>'60px']); ?></a>
 	  		<?php
 						echo Menu::widget([
 						    'options' => ['id' => "nav-mobile", 'class' => 'right side-nav'],
