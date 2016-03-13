@@ -31,22 +31,7 @@ AppAsset::register($this);
 
   <?= GATracking::widget(
       [
-          'trackingId' => 'UA-75058127-1',
-          'trackingConfig' => [
-              'name' => 'SibService.TK',
-              'allowAnchor' => false
-          ],
-          'omitScriptTag' => false,
-          'debug' => true,
-          'debugTrace' => true,
-          'anonymizeIp' => false,
-          'plugins' => [
-              'linkid' => [
-                  'cookieName' => '_ccli',
-                  'duration' => 45,
-                  'levels' => 5
-              ]
-          ]
+          'trackingId' => 'UA-75058127-1'
       ]
   ) ?>
 
