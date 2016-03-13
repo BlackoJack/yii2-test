@@ -31,9 +31,6 @@ $config = [
                 ],
             ],
         ],
-        'seo' => [
-            'class' => 'aquy\seo\components\Seo'
-        ],
         
     ],
 ];
