@@ -8,6 +8,7 @@ use yii\widgets\Menu;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 use app\components\widgets\Alert;
+use cybercog\yii\googleanalytics\widgets\GATracking;
 
 // $this->registerAssetBundle('app');
 AppAsset::register($this);
@@ -27,6 +28,13 @@ AppAsset::register($this);
   <!-- CSS  -->
   <link href="<?php echo $this->theme->baseUrl ?>/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="<?php echo $this->theme->baseUrl ?>/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <?= GATracking::widget(
+      [
+          'trackingId' => 'UA-75058127-1'
+      ]
+  ) ?>
+
 </head>
 <body>
   <?php $this->beginBody() ?>
