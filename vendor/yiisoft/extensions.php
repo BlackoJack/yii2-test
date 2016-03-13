@@ -57,4 +57,13 @@ return array (
       '@yii/faker' => $vendorDir . '/yiisoft/yii2-faker',
     ),
   ),
+  'cybercog/yii2-google-analytics' => 
+  array (
+    'name' => 'cybercog/yii2-google-analytics',
+    'version' => '0.3.1.0',
+    'alias' => 
+    array (
+      '@cybercog/yii/googleanalytics' => $vendorDir . '/cybercog/yii2-google-analytics/src',
+    ),
+  ),
 );
