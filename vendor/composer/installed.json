@@ -970,5 +970,47 @@
             "google",
             "yii2"
         ]
+    },
+    {
+        "name": "aquy/yii2-seo",
+        "version": "0.2",
+        "version_normalized": "0.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/aquy/yii2-seo.git",
+            "reference": "4ce5c2163e9120fca7ac03218be15e98656acc36"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/aquy/yii2-seo/zipball/4ce5c2163e9120fca7ac03218be15e98656acc36",
+            "reference": "4ce5c2163e9120fca7ac03218be15e98656acc36",
+            "shasum": ""
+        },
+        "require": {
+            "yiisoft/yii2": "*"
+        },
+        "time": "2016-03-02 10:53:32",
+        "type": "yii2-extension",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "aquy\\seo\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Алексей Лихачев",
+                "email": "aquy@yandex.ru"
+            }
+        ],
+        "description": "Seo",
+        "keywords": [
+            "seo",
+            "yii2"
+        ]
     }
 ]

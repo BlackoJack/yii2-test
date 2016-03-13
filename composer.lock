@@ -4,9 +4,49 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2fc6b0b0889209237c8d298e8929add2",
-    "content-hash": "ba110d1e94b3b320b0e46461b95036b8",
+    "hash": "492b56968159ed6e17bb53f43077b370",
+    "content-hash": "d33ab13f101582596726a1c9dcc4051b",
     "packages": [
+        {
+            "name": "aquy/yii2-seo",
+            "version": "0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aquy/yii2-seo.git",
+                "reference": "4ce5c2163e9120fca7ac03218be15e98656acc36"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aquy/yii2-seo/zipball/4ce5c2163e9120fca7ac03218be15e98656acc36",
+                "reference": "4ce5c2163e9120fca7ac03218be15e98656acc36",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "aquy\\seo\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Алексей Лихачев",
+                    "email": "aquy@yandex.ru"
+                }
+            ],
+            "description": "Seo",
+            "keywords": [
+                "seo",
+                "yii2"
+            ],
+            "time": "2016-03-02 10:53:32"
+        },
         {
             "name": "bower-asset/bootstrap",
             "version": "v3.3.5",

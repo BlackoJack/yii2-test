@@ -66,4 +66,13 @@ return array (
       '@cybercog/yii/googleanalytics' => $vendorDir . '/cybercog/yii2-google-analytics/src',
     ),
   ),
+  'aquy/yii2-seo' => 
+  array (
+    'name' => 'aquy/yii2-seo',
+    'version' => '0.2.0.0',
+    'alias' => 
+    array (
+      '@aquy/seo' => $vendorDir . '/aquy/yii2-seo',
+    ),
+  ),
 );
