@@ -54,6 +54,10 @@ AppAsset::register($this);
                                 !Yii::$app->user->isGuest ?
                                 ['label' => Yii::t('app', 'NAV_LOGOUT').' (' . Yii::$app->user->identity->username . ')', 'url' => ['/user/default/logout'], 'template' => '<a href="{url}" data-method="post">{label}</a>', 'visible' => !Yii::$app->user->isGuest] :
                                     false,
+                                ['label' => 'Products', 'url' => ['product/index'], 'items' => [
+                                    ['label' => 'New Arrivals', 'url' => ['product/index', 'tag' => 'new']],
+                                    ['label' => 'Most Popular', 'url' => ['product/index', 'tag' => 'popular']],
+                                ]],
 						    ],
 						]);
 					?>
