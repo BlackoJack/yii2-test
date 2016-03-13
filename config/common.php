@@ -10,7 +10,7 @@ return [
     'name' => 'SibService',
     'language'=>'ru',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log'],
+    'bootstrap' => ['seo', 'log'],
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
@@ -48,6 +48,9 @@ return [
                 ],
             ],
         ],
+        'seo' => [
+            'class' => 'aquy\seo\components\Seo'
+        ],
     ],
     'modules' => [
         'main' => [
@@ -55,6 +58,9 @@ return [
         ],
         'user' => [
             'class' => 'app\modules\user\Module',
+        ],
+        'seo' => [
+            'class' => 'aquy\seo\module\Meta'
         ],
     ],
     'params' => $params,
