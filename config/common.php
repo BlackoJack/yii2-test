@@ -10,7 +10,7 @@ return [
     'name' => 'SibService',
     'language'=>'ru',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['seo', 'log'],
+    'bootstrap' => ['seo', 'log', 'maintenanceMode'],
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
@@ -50,6 +50,17 @@ return [
         ],
         'seo' => [
             'class' => 'aquy\seo\components\Seo'
+        ],
+        'maintenanceMode'=>[
+
+            'class' => '\brussens\maintenance\MaintenanceMode',
+            'title' => 'В разработке',
+            'enabled'=>true,
+            'message'=>'Извините, сайт пока в разработке.',
+            'users'=>[
+                'black',
+            ],
+
         ],
     ],
     'modules' => [
