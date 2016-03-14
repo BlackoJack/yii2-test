@@ -81,7 +81,7 @@ return [
 
             // Allowed URLs
             'urls'=>[
-                'user/login'
+                'login'
             ],
 
             // User name attribute name
