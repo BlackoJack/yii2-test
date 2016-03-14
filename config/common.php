@@ -69,11 +69,6 @@ return [
                 'black',
             ],
 
-            // Allowed roles
-            'roles'=>[
-                'administrator',
-            ],
-
             // Allowed IP addresses
             'ips'=>[
                 '37.192.11.96',
