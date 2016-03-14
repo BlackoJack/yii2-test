@@ -62,7 +62,7 @@ return [
             'route'=>'maintenance/index',
 
             // Show message
-            'message'=>'Sorry, perform technical works.',
+            'message'=>'Извините, сайт пока в разработке.',
 
             // Allowed user names
             'users'=>[
