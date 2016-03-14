@@ -19,7 +19,8 @@
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
         "cybercog/yii2-google-analytics": "~0.2",
-        "aquy/yii2-seo": "*"
+        "aquy/yii2-seo": "*",
+        "brussens/yii2-maintenance-mode": "*"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

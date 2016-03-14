@@ -75,4 +75,13 @@ return array (
       '@aquy/seo' => $vendorDir . '/aquy/yii2-seo',
     ),
   ),
+  'brussens/yii2-maintenance-mode' => 
+  array (
+    'name' => 'brussens/yii2-maintenance-mode',
+    'version' => '0.2.3.0',
+    'alias' => 
+    array (
+      '@brussens/maintenance' => $vendorDir . '/brussens/yii2-maintenance-mode',
+    ),
+  ),
 );

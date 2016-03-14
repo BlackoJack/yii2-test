@@ -1012,5 +1012,52 @@
             "seo",
             "yii2"
         ]
+    },
+    {
+        "name": "brussens/yii2-maintenance-mode",
+        "version": "0.2.3",
+        "version_normalized": "0.2.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/brussens/yii2-maintenance-mode.git",
+            "reference": "18d99818878d776cbb21f705a78d2889426e6ecf"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/brussens/yii2-maintenance-mode/zipball/18d99818878d776cbb21f705a78d2889426e6ecf",
+            "reference": "18d99818878d776cbb21f705a78d2889426e6ecf",
+            "shasum": ""
+        },
+        "require": {
+            "yiisoft/yii2": "*"
+        },
+        "time": "2015-11-13 07:27:02",
+        "type": "yii2-extension",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "brussens\\maintenance\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Brusenskiy Dmitry",
+                "email": "brussens@nativeweb.ru"
+            },
+            {
+                "name": "Poltoratsky Alexander"
+            }
+        ],
+        "description": "Maintenance mode component for Yii framework 2.x.x version.",
+        "keywords": [
+            "maintenance",
+            "mode",
+            "yii 2",
+            "yii2"
+        ]
     }
 ]

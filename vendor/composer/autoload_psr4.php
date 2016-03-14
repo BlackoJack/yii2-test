@@ -16,6 +16,7 @@ return array(
     'yii\\' => array($vendorDir . '/yiisoft/yii2'),
     'cybercog\\yii\\googleanalytics\\' => array($vendorDir . '/cybercog/yii2-google-analytics/src'),
     'cebe\\markdown\\' => array($vendorDir . '/cebe/markdown'),
+    'brussens\\maintenance\\' => array($vendorDir . '/brussens/yii2-maintenance-mode'),
     'aquy\\seo\\' => array($vendorDir . '/aquy/yii2-seo'),
     'Faker\\' => array($vendorDir . '/fzaninotto/faker/src/Faker'),
 );
