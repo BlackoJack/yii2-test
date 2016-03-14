@@ -55,6 +55,8 @@ return [
 
             'class' => '\brussens\maintenance\MaintenanceMode',
 
+            'title'=>'В разработке',
+
             // Mode status
             'enabled'=>true,
 
