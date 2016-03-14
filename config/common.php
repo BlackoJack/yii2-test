@@ -54,7 +54,6 @@ return [
         'maintenanceMode'=>[
 
             'class' => '\brussens\maintenance\MaintenanceMode',
-            'title' => 'В разработке',
             'enabled'=>true,
             'message'=>'Извините, сайт пока в разработке.',
             'users'=>[
