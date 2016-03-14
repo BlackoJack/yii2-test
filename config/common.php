@@ -84,9 +84,6 @@ return [
                 'login'
             ],
 
-            // User name attribute name
-            'usernameAttribute'=>'login',
-
             // HTTP Status Code
             'statusCode'=>503,
 
