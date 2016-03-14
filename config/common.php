@@ -54,11 +54,53 @@ return [
         'maintenanceMode'=>[
 
             'class' => '\brussens\maintenance\MaintenanceMode',
+            // Page title
+            'title' => 'Custom title',
+
+            // Mode status
             'enabled'=>true,
-            'message'=>'Извините, сайт пока в разработке.',
+
+            // Route to action
+            'route'=>'maintenance/index',
+
+            // Show title
+            'title'=>'this site is under maintenance',
+
+            // Show message
+            'message'=>'Sorry, perform technical works.',
+
+            // Allowed user names
             'users'=>[
-                'black',
+                'BrusSENS',
             ],
+
+            // Allowed roles
+            'roles'=>[
+                'administrator',
+            ],
+
+            // Allowed IP addresses
+            'ips'=>[
+                '127.0.0.1',
+            ],
+
+            // Allowed URLs
+            'urls'=>[
+                'site/login'
+            ],
+
+            // Layout path
+            'layoutPath'=>'@web/maintenance/layout',
+
+            // View path
+            'viewPath'=>'@web/maintenance/view',
+
+            // User name attribute name
+            'usernameAttribute'=>'login',
+
+            // HTTP Status Code
+            'statusCode'=>503,
+
 
         ],
     ],
