@@ -66,7 +66,7 @@ return [
 
             // Allowed user names
             'users'=>[
-                'BrusSENS',
+                'black',
             ],
 
             // Allowed roles
@@ -76,19 +76,13 @@ return [
 
             // Allowed IP addresses
             'ips'=>[
-                '127.0.0.1',
+                '37.192.11.96',
             ],
 
             // Allowed URLs
             'urls'=>[
-                'site/login'
+                'user/login'
             ],
-
-            // Layout path
-            'layoutPath'=>'@web/maintenance/layout',
-
-            // View path
-            'viewPath'=>'@web/maintenance/view',
 
             // User name attribute name
             'usernameAttribute'=>'login',
