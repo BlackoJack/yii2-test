@@ -54,17 +54,12 @@ return [
         'maintenanceMode'=>[
 
             'class' => '\brussens\maintenance\MaintenanceMode',
-            // Page title
-            'title' => 'Custom title',
 
             // Mode status
             'enabled'=>true,
 
             // Route to action
             'route'=>'maintenance/index',
-
-            // Show title
-            'title'=>'this site is under maintenance',
 
             // Show message
             'message'=>'Sorry, perform technical works.',
