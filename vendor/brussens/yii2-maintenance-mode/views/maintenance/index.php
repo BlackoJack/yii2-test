@@ -8,7 +8,7 @@
  */
 use yii\helpers\Html;
 ?>
-<h1>We&rsquo;ll be back soon!</h1>
+<h1>В разработке!</h1>
 <div>
     <p>
         <?php if (Yii::$app->maintenanceMode->message): ?>
